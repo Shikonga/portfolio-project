@@ -23,6 +23,19 @@ h1{
     line-height: 1.5;
 }
 
+.about-me h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+.about-me h2, p{
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+
+.about-me{
+    padding: 120px 60px;
+}
+
 p{
     font-weight: normal;
     font-size: 18px;
@@ -44,16 +57,24 @@ p{
 .container-section{
     padding: 120px 60px;
 }
+.connect-section{
+    background-color: var(--background-color);
+}
 
 @media (max-width: 900px) {
    h1{
-    font-size: 50px;
+    font-size: 44px;
+    line-height: 2;
    }
    h2{
     font-size: 43px;
    }
    .top-section{
     padding: 80px 30px;
+   }
+   .about-me{
+    text-align: center;
+    padding: 0;
    }
    
     .container-section{
