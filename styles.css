@@ -16,7 +16,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
     color: black;
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-weight: bold;
 }
 h1{
@@ -34,7 +34,7 @@ h1{
 }
 
 .content-description{
-    padding: 120px 60px;
+    padding: 100px 60px;
 }
 
 p{
@@ -84,6 +84,8 @@ nav li{
 nav a{
     text-decoration: none;
     color: black;
+    font-size: 24px;
+    font-family: var(--default-font-family);
 }
 
 nav li.active a {
@@ -131,7 +133,7 @@ footer{
     margin: 0 20px;
     color: var(--secondary-color);
     background-color: var(--background-color);
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 50%;
     font-size: 18px;
       
@@ -141,6 +143,49 @@ footer{
     transition: all 100ms ease-in-out;
     color: var(--background-color);
 }
+
+.btn-live{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+.about-btns a {
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* .cont{
+    background-color: rgb(239, 231, 239);
+    padding: 5px;
+    color: var(--secondary-color)
+} */
+
+.cont {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--secondary-color) ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.cont:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 
 @media (max-width: 900px) {
    h1{
@@ -158,11 +203,14 @@ footer{
     padding: 0;
    }
    .content-description h1 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
 }
+
+
    .content-description p{
     font-size: 16px;
+    
    }
    
     .container-section{
@@ -192,7 +240,7 @@ footer{
     .content h3 {
         font-size: 18px; 
     }
-    content p {
+    .content p {
         font-size: 10px; 
     }
 
@@ -212,6 +260,24 @@ footer{
     margin: 0 5px; 
     font-size: 12px;
     padding: 6px 8px;
+    }
+
+    .about-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .about-btns a{
+       margin-bottom: 20px;
+       width:50%;  
+       padding: 10px 20px;
+       font-size: 12px;  
+
+       
+             
     }
     
 }
